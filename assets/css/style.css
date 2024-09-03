@@ -17,6 +17,47 @@ html {
     color: #fff !important;
 }
 
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
 /*
 1. vị trí
 2. kích thước
@@ -41,30 +82,35 @@ html {
     display: inline-block;
 }
 
-#nav, .subnav {
+#nav,
+.subnav {
     list-style-type: none;
 
 }
 
-#nav > li {
-    display: inline-block;/*cho tất cả thẻ li là con trực tiếp của nav làm trên hàng nagng*/
+#nav>li {
+    display: inline-block;
+    /*cho tất cả thẻ li là con trực tiếp của nav làm trên hàng nagng*/
 }
 
 #nav li {
     position: relative;
 }
 
-#nav > li > a {
+#nav>li>a {
     color: #fff;
-    text-transform: uppercase;/*chữ in hoa*/
+    text-transform: uppercase;
+    /*chữ in hoa*/
 }
 
 #nav li a {
-    text-decoration: none;/*bỏ gạch chân thẻ a*/
-    line-height: 46.5px;/*cho bằng chiều cao của header sẽ tự động thẻ a nằm ở giữa*/
+    text-decoration: none;
+    /*bỏ gạch chân thẻ a*/
+    line-height: 46.5px;
+    /*cho bằng chiều cao của header sẽ tự động thẻ a nằm ở giữa*/
     padding: 0 24px;
     display: block;
-    
+
 }
 
 #nav li:hover .subnav {
@@ -72,7 +118,7 @@ html {
 }
 
 #nav .subnav li:hover a,
-#nav > li:hover > a {
+#nav>li:hover>a {
     color: #000;
     background-color: #ccc;
 }
@@ -104,8 +150,8 @@ html {
 
 #header .search-btn:hover {
     background-color: #f44336;
-     /*biến thành hình bàn tay khi di chuột vào*/
-     cursor: pointer;
+    /*biến thành hình bàn tay khi di chuột vào*/
+    cursor: pointer;
 }
 
 #nav .subnav a {
@@ -122,7 +168,8 @@ html {
 #slider {
     position: relative;
     margin-top: 46.5px;
-    padding-top: 50%;/*% là 50% chiều ngang của chính nó*/
+    padding-top: 50%;
+    /*% là 50% chiều ngang của chính nó*/
     background-image: url("../img/sliders/slider1.jpg");
     background-position: top center;
     background-repeat: no-repeat;
@@ -148,7 +195,7 @@ html {
 }
 
 #content {
-
+    
 }
 
 #content .content-section {
@@ -162,7 +209,8 @@ html {
     font-size: 30px;
     text-align: center;
     font-weight: 500;
-    letter-spacing: 4px;/*khoảng cách các chữ cách nhau 4px*/
+    letter-spacing: 4px;
+    /*khoảng cách các chữ cách nhau 4px*/
 }
 
 #content .section-sub-heading {
@@ -170,24 +218,20 @@ html {
     text-align: center;
     margin-top: 25px;
     font-style: italic;
-    opacity: 0.6;/*làm mờ đi*/
+    opacity: 0.6;
+    /*làm mờ đi*/
 }
 
 #content .about-text {
     font-size: 15px;
     margin-top: 25px;
-    text-align: justify; /*căn đều chữ hai bên*/
+    text-align: justify;
+    /*căn đều chữ hai bên*/
     line-height: 1.6;
 }
 
 #content .members-list {
     margin-top: 47px;
-}
-
-#content .member-item {
-    float: left;/*cho thành hàng ngang*/
-    width: calc(100% / 3);
-    text-align: center;
 }
 
 #content .member-name {
@@ -231,22 +275,16 @@ html {
     color: #fff;
     background-color: #000;
     border-radius: 50%;
-    text-align: center;/*chữ căn giuwac theo chiều ngang*/
-    line-height: 24.7px;/*chữ căn giữa theo chiều dọc*/
+    text-align: center;
+    /*chữ căn giuwac theo chiều ngang*/
+    line-height: 24.7px;
+    /*chữ căn giữa theo chiều dọc*/
     margin-top: -3px;
 }
 
 .places-list {
     margin-top: 32px;
-    margin-left: -8px;
-    margin-right: -8px;
     padding-bottom: 48px;
-}
-
-.place-item {
-    float: left;
-    width: calc(100% / 3);
-    padding: 0 8px;
 }
 
 .place-img {
@@ -293,7 +331,8 @@ html {
 }
 
 .modal {
-    position: fixed;/*phủ lên trên main*/
+    position: fixed;
+    /*phủ lên trên main*/
     top: 0;
     right: 0;
     bottom: 0;
@@ -395,11 +434,50 @@ html {
     color: #2196F3;
 }
 
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+}
+
+.contact-form .form-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+}
+
 @keyframes modalFadeIn {
     from {
         opacity: 0;
         transform: translateY(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
