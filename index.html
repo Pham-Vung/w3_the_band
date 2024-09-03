@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/icons/themify-icons-font/themify-icons/themify-icons.css">
 </head>
@@ -13,37 +13,22 @@
     <div id="main">
         <div id="header">
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
-
-            <!-- <div id="nav">
-                <a href="">Home</a>
-                <a href="">Band</a>
-                <a href="">Tour</a>
-                <a href="">Contact</a>
-                <div class="subnav_1">
-                    <a href="">More</a>
-                    <div class="subnav_2">
-                        <a href="">Merchandise</a>
-                        <a href="">Extras</a>
-                        <a href="">Media</a>
-                    </div>
-                </div>
-            </div> -->
 
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
@@ -58,7 +43,7 @@
         </div>
 
         <div id="content">
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">We have created a fictional
@@ -95,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -113,7 +98,7 @@
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -123,7 +108,7 @@
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -133,14 +118,14 @@
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
                 <div class="row contact-content">
@@ -174,14 +159,27 @@
                                     <input type="text" name="" id="" class="form-control" placeholder="Message" required>
                                 </div>
                             </div>
-                            <input type="submit" value="SEND" class="mt-16 form-submit-btn">
+                            <input type="submit" value="SEND" class="mt-16 btn pull-right">
                         </form>
                     </div>
                 </div>
             </div>
+
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="">
+            </div>
         </div>
 
         <div id="footer">
+            <div class="socials-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter-alt"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="">w3.css</a></p>
         </div>
     </div>
 
